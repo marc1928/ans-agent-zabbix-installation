@@ -1,0 +1,5 @@
+egnt_name: zabbix_agent
+ip_zabbix_server: 172.16.2.49
+server_name: server-marc2
+zabbix_agent_port: 10050
+allow_key: "*"

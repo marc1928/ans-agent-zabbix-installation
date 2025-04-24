@@ -1,0 +1,6 @@
+---
+- name: Inallation d'agent zabbix 
+  hosts: debian.cible1 
+  become: yes 
+  roles:
+    - zabbix

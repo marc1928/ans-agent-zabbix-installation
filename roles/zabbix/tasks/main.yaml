@@ -1,0 +1,16 @@
+--- 
+- name: installation du l'agent zabbix 
+  package:
+    name: zabbix-agent
+    state: latest 
+    update_cache: yes
+  tags: installtion
+
+- name: configuration de l'agent
+  template: 
+    src: templates/zabbix_agentd.conf.j2
+    dest: /etc/zabbix/zabbix_agentd.conf
+  notify: restart agent
+
+
+

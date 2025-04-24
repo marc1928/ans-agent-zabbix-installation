@@ -1,0 +1,8 @@
+all:
+  children:
+    zabbix:
+      hosts:
+        debian.cible1:
+  
+    
+  
